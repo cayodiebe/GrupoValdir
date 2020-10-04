@@ -1,0 +1,11 @@
+[30-Jan-2020 10:03:55 America/Fortaleza] PHP Fatal error:  Call to a member function prepare() on null in /home1/valdirpinturas/public_html/class/banco.class.php on line 159
+[30-Jan-2020 10:03:55 America/Fortaleza] PHP Fatal error:  Call to a member function prepare() on null in /home1/valdirpinturas/public_html/class/banco.class.php on line 159
+[30-Jan-2020 10:03:59 America/Fortaleza] PHP Fatal error:  Call to a member function prepare() on null in /home1/valdirpinturas/public_html/class/banco.class.php on line 159
+[30-Jan-2020 10:04:00 America/Fortaleza] PHP Fatal error:  Call to a member function prepare() on null in /home1/valdirpinturas/public_html/class/banco.class.php on line 159
+[30-Jan-2020 10:04:24 America/Fortaleza] PHP Fatal error:  Call to a member function prepare() on null in /home1/valdirpinturas/public_html/class/banco.class.php on line 159
+[12-Sep-2020 10:18:03 America/Fortaleza] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[12-Sep-2020 10:18:03 America/Fortaleza] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
+[16-Sep-2020 03:01:35 America/Fortaleza] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[16-Sep-2020 03:01:35 America/Fortaleza] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
+[23-Sep-2020 10:48:27 America/Fortaleza] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[23-Sep-2020 10:48:27 America/Fortaleza] PHP Warning:  Module 'SourceGuardian' already loaded in Unknown on line 0
