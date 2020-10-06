@@ -274,13 +274,13 @@ footer .copy span{width: 100%; float: left; clear: both; text-align: center; fon
 }
 
 
-.servicos{width: 100%; float: left; clear: both; margin-bottom: -100px;}
+.servicos{width: 100%; float: left; clear: both; margin-bottom: -100px; }
 
-.servicos .cada{width: 100%; float: left; clear: both; margin: 30px 0px; border: 1px solid #d1d1d1; border-radius: 8px; overflow: hidden;}
+.servicos .cada{width: 100%; height: auto; float: left; clear: both; margin: 30px 0px; border: 1px solid #d1d1d1; border-radius: 8px; overflow: hidden;}
 
 .servicos .cada .imagem{width: 30%; height: 350px; float: left;}
 
-.servicos .cada .textos{width: 70%; float: left; height: 350px; padding: 40px;}
+.servicos .cada .textos{width: 70%; float: left; height: auto; padding: 40px;}
 
 .servicos .cada .textos .titulo{width: 100%; float: left; clear: both; font-size: 30px; font-weight: 900; color: #346397;}
 
