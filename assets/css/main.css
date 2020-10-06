@@ -1,280 +1,570 @@
-body{font-size: 100%; min-height: 100vh; font-family: 'Montserrat'; width: 100%; float: left; clear: both;}
-textarea{height: 120px; resize: none;}
-select{-webkit-appearance: menulist-button;}
-._tr { -webkit-transition:all 0.3s ease; -moz-transition:all 0.3s ease; -ms-transition:all 0.3s ease; -o-transition:all 0.3s ease; transition:all 0.3s ease; }
-._bc { -webkit-background-size:cover !important; -moz-background-size:cover !important; -o-background-size:cover !important; background-size:cover !important; }
-._nopad { padding:0; } ._nopt { padding-top:0 !important; } ._nopr { padding-right:0 !important; } ._nopb { padding-bottom:0 !important; } ._nopl { padding-left:0 !important; }
-.rotacao{image-rendering: optimizeQuality; -webkit-transition: all 500ms ease; -moz-transition: all 500ms ease; -ms-transition: all 500ms ease; -o-transition: all 500ms ease; transition: all 500ms ease;}
-.rotacao:hover{-moz-transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);-webkit-transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);-o-transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);-ms-transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);}
-.centerV{position:relative; top:50%; transform:translateY(-50%); -webkit-transform:translateY(-50%); -moz-transform:translateY(-50%); -ms-transform:translateY(-50%);}
-.centerR{position:relative; left:50%; transform:translateX(-50%); -webkit-transform:translateX(-50%); -moz-transform:translateX(-50%); -ms-transform:translateX(-50%);}
-.centerA{position:absolute; left:50%; transform:translateX(-50%); -webkit-transform:translateX(-50%); -moz-transform:translateX(-50%); -ms-transform:translateX(-50%);}
-.centerAll{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%); -moz-transform:translate(-50%, -50%); -ms-transform:translate(-50%, -50%);}
-
-/*	Cor da Seleção de Texto  
-	::selection{background:#D52A16; color:#FFF;}
-	::-moz-selection{background:#D52A16; color:#FFF;}
-	::-webkit-selection{background:#D52A16; color:#FFF;}
-*/
-
-/** Estrutura **/
-/** CSS das áreas do site que são iguais em todas as páginas **/
-.limitador {max-width: 1024px; width: 100%; height: auto; position: relative; margin: 0 auto; transform: scale(0.8);}
-.fontzero{font-size: 0px;}
-.show-desktop{display:block!important}.hide-desktop{display:none!important}
-
-/*::-webkit-scrollbar{width:5px; background:#335843; }
-::-webkit-scrollbar-track { background: #335843; }
-::-webkit-scrollbar-thumb { border-radius:5px; background:#01974B;  }*/
-
-/*::placeholder { }
-::-ms-input-placeholder { }
-::-ms-input-placeholder { }*/
-
-
-/** Páginas **/
-/** CSS para cada página do site **/
-
-header{width: 100%; float: left; clear: both;}
-header .topo{width: 100%; float: left; clear: both; padding: 20px 0px;}
-header .topo img.logo{float: left; width: 250px;}
-header .topo img.logo:hover{opacity: 0.7;}
-header .topo .boxs{float: right; margin-top: 22px;}
-header .topo .boxs .cada{float: left; padding-left: 20px;}
-header .topo .boxs .cada i{float: left; font-size: 30px; color: #4980ad;}
-header .topo .boxs .cada span{float: left; font-size: 22px; font-weight: 600; color: #646870; margin-left: 10px; margin-top: 3px;}
-header .menu{width: 100%; float: left; clear: both; border-top: 1px solid #d1d1d1;}
-header .menu ul{width: 100%; float: left; clear: both;}
-header .menu ul li{float: left;}
-header .menu ul li a{float: left; font-size: 20px; color: #646870; padding: 25px 60px;}
-header .menu ul li.ativo a{border-bottom: 5px solid #4980ad; color: #333;}
-header .menu ul li a:hover{background: #f1f1f1;}
-
-
-.banners{width: 100%; float: left; clear: both;}
-.banners .cada{width: 100%; float: left; clear: both;}
-.banners .cada img{width: 100%; height: auto; float: left; clear: both;}
-
-
-.quemsomos{width: 100%; float: left; clear: both; padding: 50px 0px;}
-.quemsomos .lado1{width: 30%; float: left;}
-.quemsomos .lado1 img{max-width: 90%; float: left; clear: both;}
-.quemsomos .lado2{width: 70%; float: left; padding-left: 80px;}
-.quemsomos .lado2 .titulo{width: 100%; float: left; clear: both; font-size: 45px; font-weight: 900; color: #346397;}
-.quemsomos .lado2 .texto{width: 100%; float: left; clear: both; font-size: 20px; font-weight: 400; color: #646870; margin-top: 20px;}
-
-
-
-.numeros{width: 100%; float: left; clear: both; background: #f1efef; padding: 50px 0px;}
-.numeros .cada{width: 25%; float: left; text-align: center; padding: 0px 20px;}
-.numeros .cada h2{width: 100%; float: left; clear: both; text-align: center; font-size: 60px; font-weight: 900; color: #396799;}
-.numeros .cada span{width: 100%; float: left; clear: both; text-align: center; font-size: 30px; color: #646870; margin-top: 20px;}
-
-
-
-.solucoes{width: 100%; float: left; clear: both; padding: 40px 0px;}
-.solucoes h1{width: 100%; float: left; clear: both; font-size: 60px; font-weight: 900; color: #396799; text-align: center;}
-.solucoes .todas{width: 100%; float: left; clear: both; margin-top: 20px;}
-.solucoes .todas .cada{width: 32%; height: 530px; margin: 0.5% 0.5% 30px 0.5%; border: 1px solid #CCC; border-radius: 10px; overflow: hidden; float: left;}
-.solucoes .todas .cada .imagem{width: 100%; height: 250px; float: left; clear: both;}
-.solucoes .todas .cada .titulo{width: 100%; float: left; clear: both; padding: 20px; text-align: center; font-size: 30px; color: #646870;}
-.solucoes .todas .cada .btn{float: left; clear: both; width: 80%; margin-left: 10%; background: #396799; color: #FFF; font-size: 30px; padding: 15px; border-radius: 8px; text-align: center; margin-bottom: 20px;}
-.solucoes .todas .cada .btn:hover{opacity: 0.7;}
-
-
-.orcamento{width: 100%; float: left; clear: both; background: #2f4762; padding: 70px 0px 20px 0px;}
-.orcamento h2{width: 100%; float: left; clear: both; text-align: center; font-size: 46px; color: #FFF; font-weight: 900;}
-.orcamento .texto{width: 100%; float: left; clear: both; text-align: center; color: #FFF; font-size: 30px; padding: 20px 0px;}
-.orcamento .texto b{font-weight: 900;}
-.orcamento .btn{float: left; clear: both; font-size: 30px; font-weight: 900; color: #FFF; background: #5cb6d1; padding: 15px 50px; border-radius: 8px;}
-.orcamento .btn:hover{opacity: 0.7;}
-
-
-footer{width: 100%; float: left; clear: both; background: #f1efef; padding: 100px 0px 0px 0px;}
-footer ul{float: left;}
-footer ul li{float: left; clear: both; margin: 3px 0px;} 
-footer ul li a{float: left; clear: both; font-size: 30px; color: #646870;}
-footer ul li a:hover{text-decoration: underline;}
-
-footer .textos{float: right; font-size: 30px; color: #646870; line-height: 50px; padding-top: 20px;}
-footer .textos i{color: #4980ad; width: 40px; text-align: center;}
-
-footer .copy{width: 100%; float: left; clear: both; margin-top: 40px;}
-footer .copy img{float: left; clear: both;}
-footer .copy img:hover{opacity: 0.7;}
-footer .copy span{width: 100%; float: left; clear: both; text-align: center; font-size: 30px; color: #646870; padding-top: 20px;}
-
-
-.mvv{width: 100%; float: left; clear: both; margin-bottom: 50px;}
-.mvv .cada{width: 30%; float: left; border: 1px solid #CCC; border-radius: 10px; padding: 50px 20px; margin-right: 51px;}
-.mvv .cada img{float: left; clear: both;}
-.mvv .cada h3{width: 100%; float: left; clear: both; text-align: center; font-size: 45px; color: #346397; padding: 20px 0px; margin-top: 20px;}
-.mvv .cada span{width: 100%; float: left; clear: both; text-align: center; font-size: 20px; color: #646870; line-height: 30px;}
-
-.mvv .cada:last-child{margin-right: 0px;}
-
-
-.seguranca{width: 100%; float: left; clear: both; padding: 100px 0px;}
-.seguranca .titulo{width: 100%; float: left; clear: both; font-size: 45px; font-weight: 900; color: #346397; text-align: center;}
-.seguranca .texto{width: 100%; float: left; clear: both; font-size: 20px; color: #646870; line-height: 38px; margin-top: 20px; text-align: center; margin-bottom: 50px;}
-.seguranca .todos{width: 100%; float: left; clear: both;}
-.seguranca .todos .cada{width: 25%; height: 200px; float: left; position: relative;}
-.seguranca .todos .cada img{float: left; clear: both; max-width: 90%; max-height: 90%;}
-
-
-.menu_servicos{width: 100%; float: left; clear: both;}
-.menu_servicos ul{width: 100%; float: left; clear: both; padding: 20px 40px; margin-top: 50px;}
-.menu_servicos ul li{width: 25%; float: left;}
-.menu_servicos ul li a{float: left; font-size: 20px; color: #626870; padding: 10px 10px; text-align: center;}
-.menu_servicos ul li a:hover{opacity: 0.7;}
-
-.menu_servicos ul li.ativo a{border-bottom: 5px solid #4980ad;}
-
-
-.servicos{width: 100%; float: left; clear: both;}
-.servicos .cada{width: 100%; float: left; clear: both; margin: 30px 0px; border: 1px solid #d1d1d1; border-radius: 8px; overflow: hidden;}
-.servicos .cada .imagem{width: 30%; height: 350px; float: left;}
-.servicos .cada .textos{width: 70%; float: left; height: 350px; padding: 40px;}
-.servicos .cada .textos .titulo{width: 100%; float: left; clear: both; font-size: 30px; font-weight: 900; color: #346397;}
-.servicos .cada .textos .texto{width: 100%; float: left; clear: both; font-size: 20px; color: #626870; padding: 20px 0px 10px 0px; line-height: 28px;}
-.servicos .cada .textos a{font-size: 20px; color: #346397; font-weight: 900; float: left; clear: both;}
-.servicos .cada .textos .btn{background: #5cb6d1; color: #FFF; font-size: 26px; padding: 10px 30px; border-radius: 8px; margin-top: 20px;}
-.servicos .cada .textos a:hover{opacity: 0.7;}
-
-.servicos .voltar{float: left; background: #5cb6d1; color: #FFF; font-size: 26px; padding: 10px 30px; border-radius: 8px; margin-top: 20px;}
-.servicos .voltar:hover{opacity: 0.7; cursor: pointer;}
-
-.servicos .semresultado{width: 100%; float: left; clear: both; font-size: 32px; color: #999; padding: 40px 0px; text-align: center;}
-
-
-.clientes{width: 100%; float: left; clear: both; padding: 50px 0px;}
-.clientes h1{width: 100%; float: left; clear: both; font-size: 50px; font-weight: 900; color: #346397; padding: 20px 0px; text-align: center;}
-.clientes .todos{width: 100%; float: left; clear: both;}
-.clientes .todos .cada{width: 33.3333333333%; float: left; height: 200px; position: relative;}
-.clientes .todos .cada img{max-width: 70%; max-height: 70%; float: left;}
-.clientes .todos .cada:hover{transform: scale(1.1);}
-.clientes .todos a:hover{opacity: 0.7;}
-
-
-.contato{width: 100%; float: left; clear: both; padding: 50px 0px;}
-.contato h1{width: 100%; float: left; clear: both; font-size: 50px; font-weight: 900; color: #346397; padding: 20px 0px; text-align: center;}
-.contato h4{width: 100%; float: left; clear: both; font-size: 26px; color: #626870; padding: 20px 0px; text-align: center;}
-
-.contato form{width: 100%; float: left; clear: both; background: #f1efef; padding: 40px; border-radius: 8px; margin-top: 40px; margin-bottom: -240px;}
-.contato form input,
-.contato form textarea{width: 100%; font-family: 'Montserrat'; float: left; clear: both; font-size: 26px; color: #626870; padding: 20px; border:4px solid transparent; background: #FFF; border-radius: 8px; outline: none; margin: 10px 0px;}
-.contato form textarea{height: 300px;}
-
-.contato form input:focus,
-.contato form textarea:focus{border:4px solid #346397;}
-
-.contato form button{width: 100%; float: left; clear: both; background: #346397; color: #FFF; font-size: 30px; font-weight: 900; text-align: center; padding: 20px; border-radius: 8px; margin-top: 20px; border: none; outline: none;}
-.contato form button:hover{cursor: pointer; opacity: 0.7;}
-
-
-
-
-
-.overlay_hamb{background:#000; opacity:0.8; width: 100%; height: 100%; position: fixed; top:0px; bottom:0px; left:0px; right:0px; float:left; z-index:99; display:none;}
-.hamburguer{width: 40px; float:left; position: absolute; z-index:999; right:20px; top:32px; display:none;}
-.line{width: 100%; height:4px; background:#346397; float:left; margin:3px 0px;}
-.hamburguerAtivo .line:nth-child(2){display:none;}
-.hamburguerAtivo .line:first-child{-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg); margin-top:7px;}
-.hamburguerAtivo .line:last-child{-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg); margin-top:-7px;}
-.menu-responsive{height: 100%; background:#346397; float: left; position: fixed; top:0px; bottom:0px; left:0px; right:100%; z-index:9999; overflow: hidden;}
-.menu-responsive ul{color:#FFF; font-size: 16px; float:left; width: 100%; padding: 20px 0px;}
-.menu-responsive ul li a{float:left; width: 100%; padding:20px 30px; -webkit-transition:all 0.3s ease; -moz-transition:all 0.3s ease; -ms-transition:all 0.3s ease; -o-transition:all 0.3s ease; transition:all 0.3s ease;}
-.menu-responsive ul li a:hover{padding-left:35px; -webkit-transition:all 0.3s ease; -moz-transition:all 0.3s ease; -ms-transition:all 0.3s ease; -o-transition:all 0.3s ease; transition:all 0.3s ease;}
-
-
-
-
-
-
-
-/** Tablet/Notebook **/
-@media only screen and (max-width: 1024px) {
-	.show-tablet{display:block!important}.hide-tablet{display:none!important}
-
-	html, body{width: 100%; float: left; clear: both; overflow-x: hidden;}
-
-	.hamburguer{display: block;}
-
-
-	header .topo img.logo{width: 200px; position: relative; margin-left: 20px;}
-	header .topo .boxs{float: left; clear: both; display: none;}
-	header .topo .boxs .cada{width: 100%; text-align: center; margin: 5px 0px;}
-	header .topo .boxs .cada i{float: initial;}
-	header .topo .boxs .cada span{float: initial;}
-
-	header .menu{display: none;}
-	header .menu ul li{width: 100%;}
-	header .menu ul li a{padding: 10px 20px; width: 100%; text-align: center;}
-	header .menu ul li.ativo a{border-bottom: none; color: #346397; font-weight: 900;}
-
-	.quemsomos{padding: 0px 20px 50px 20px;}
-	.quemsomos .lado1{width: 100%; display: none;}
-	.quemsomos .lado1 img{max-width: 200px; position: relative; left: 50%; margin-left: -100px;}
-	.quemsomos .lado2{width: 100%; padding-left: 0px; padding: 40px 20px; margin-bottom: -130px;}
-
-	.mvv{width: 100%; padding: 20px;}
-	.mvv .cada{width: 100%; margin: 20px 0px;}
-	.mvv .cada:last-child{margin-bottom: -310px;}
-	.mvv .cada h3{font-size: 45px;}
-
-	.numeros .cada{width: 100%; padding: 40px 0px;}
-	.numeros .cada:last-child{margin-bottom: -180px;}
-
-	.seguranca{padding: 40px 20px;}
-	.seguranca .todos .cada{width: 50%;}
-
-	.orcamento{padding: 40px 20px;}
-	.orcamento .btn{font-size: 22px;}
-
-	footer ul{width: 100%;}
-	footer ul li{width: 100%; text-align: center;}
-	footer ul li a{width: 100%; text-align: center;}
-
-	footer .textos{width: 100%; float: left; text-align: center;}
-
-	footer .copy{padding: 0px 20px;}
-	footer .copy img{max-width: 250px;}
-	footer .copy span{font-size: 16px;}
-
-
-	.solucoes{padding: 40px 20px; font-size: 40px; margin-bottom: -290px;}
-	.solucoes .todas .cada{width: 100%;}
-	.solucoes .todas .cada .btn{font-size: 22px; padding: 10px 20px; width: auto; position: relative; left: 50%; margin-left:-80px; }
-
-	.servicos{padding: 20px;}
-	.servicos .cada .imagem{width: 100%; height: 200px;}
-	.servicos .cada .textos{width: 100%; height: auto;}
-	.servicos .cada .textos .btn{font-size: 22px;}
-
-	.menu_servicos ul li{width: 100%;}
-	.menu_servicos ul li a{width: 100%; text-align: center; padding: 40px 30px;}
-
-	.clientes{padding: 40px 20px;}
-	.clientes .todos .cada{width: 50%;}
-
-	.contato{padding: 40px 20px;}
-
-
-	.contato form input,
-	.contato form textarea{font-size: 20px; padding: 10px;}
-	.contato form button{font-size: 20px; background: #5cb6d1;}
-
-	.solucoes .todas .cada{height: auto;}
-
-}
-/** Celular Maior **/
-@media only screen and (max-width: 768px) {
-	.show-phone{display:block!important}.hide-phone{display:none!important}
-}
-@media only screen and (max-width: 470px) {
-	.show-phone{display:block!important}.hide-phone{display:none!important}
-}
-@media only screen and (max-width: 350px) {
-	.show-phone{display:block!important}.hide-phone{display:none!important}
-}
-
+body{font-size: 100%; min-height: 100vh; font-family: 'Montserrat'; width: 100%; float: left; clear: both;}
+
+textarea{height: 120px; resize: none;}
+
+select{-webkit-appearance: menulist-button;}
+
+._tr { -webkit-transition:all 0.3s ease; -moz-transition:all 0.3s ease; -ms-transition:all 0.3s ease; -o-transition:all 0.3s ease; transition:all 0.3s ease; }
+
+._bc { -webkit-background-size:cover !important; -moz-background-size:cover !important; -o-background-size:cover !important; background-size:cover !important; }
+
+._nopad { padding:0; } ._nopt { padding-top:0 !important; } ._nopr { padding-right:0 !important; } ._nopb { padding-bottom:0 !important; } ._nopl { padding-left:0 !important; }
+
+.rotacao{image-rendering: optimizeQuality; -webkit-transition: all 500ms ease; -moz-transition: all 500ms ease; -ms-transition: all 500ms ease; -o-transition: all 500ms ease; transition: all 500ms ease;}
+
+.rotacao:hover{-moz-transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);-webkit-transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);-o-transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);-ms-transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);}
+
+.centerV{position:relative; top:50%; transform:translateY(-50%); -webkit-transform:translateY(-50%); -moz-transform:translateY(-50%); -ms-transform:translateY(-50%);}
+
+.centerR{width: 30%; position:relative; left:50%; transform:translateX(-50%); -webkit-transform:translateX(-50%); -moz-transform:translateX(-50%); -ms-transform:translateX(-50%);}
+
+.centerA{position:absolute; left:50%; transform:translateX(-50%); -webkit-transform:translateX(-50%); -moz-transform:translateX(-50%); -ms-transform:translateX(-50%);}
+
+.centerAll{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%); -moz-transform:translate(-50%, -50%); -ms-transform:translate(-50%, -50%);}
+
+
+
+/*	Cor da Seleção de Texto  
+
+	::selection{background:#D52A16; color:#FFF;}
+
+	::-moz-selection{background:#D52A16; color:#FFF;}
+
+	::-webkit-selection{background:#D52A16; color:#FFF;}
+
+*/
+
+
+
+/** Estrutura **/
+
+/** CSS das áreas do site que são iguais em todas as páginas **/
+
+.limitador {max-width: 1024px; width: 100%; height: auto; position: relative; margin: 0 auto; transform: scale(0.8);}
+.limitador .textoSizeSlow {font-size: 18px; }
+
+.fontzero{font-size: 0px;}
+
+.show-desktop{display:block!important}.hide-desktop{display:none!important}
+
+
+
+/*::-webkit-scrollbar{width:5px; background:#335843; }
+
+::-webkit-scrollbar-track { background: #335843; }
+
+::-webkit-scrollbar-thumb { border-radius:5px; background:#01974B;  }*/
+
+
+
+/*::placeholder { }
+
+::-ms-input-placeholder { }
+
+::-ms-input-placeholder { }*/
+
+
+
+
+
+/** Páginas **/
+
+/** CSS para cada página do site **/
+
+
+
+header{width: 100%; float: left; clear: both;}
+
+header .topo{width: 100%; float: left; clear: both; padding: 20px 0px;}
+
+header .topo img.logo{float: left; width: 200px;}
+
+header .topo img.logo:hover{opacity: 0.7;}
+
+header .topo .boxs{float: right; margin-top: 15px;}
+
+header .topo .boxs .cada{float: left; padding-left: 10px;}
+
+header .topo .boxs .cada i{float: left; font-size: 30px; color: #4980ad;}
+
+header .topo .boxs .cada span{float: left; font-size: 22px; font-weight: 600; color: #646870; margin-left: 8px; margin-top: 3px;}
+
+header .menu{width: 100%; float: left; clear: both; border-top: 1px solid #d1d1d1;}
+
+header .menu ul{width: 100%; float: left; clear: both;}
+
+header .menu ul li{float: left;}
+
+header .menu ul li a{float: left; font-size: 20px; color: #646870; padding: 18px 60px;}
+
+header .menu ul li.ativo a{border-bottom: 5px solid #4980ad; color: #333;}
+
+header .menu ul li a:hover{background: #f1f1f1;}
+
+
+
+
+
+.banners{width: 100%; float: left; clear: both;}
+
+.banners .cada{width: 100%; float: left; clear: both;}
+
+.banners .cada img{width: 100%; height: auto; float: left; clear: both;}
+
+
+
+
+
+.quemsomos{width: 100%; float: left; clear: both; padding: 50px 0px;}
+
+.quemsomos .lado1{width: 30%; float: left;}
+
+.quemsomos .lado1 img{max-width: 70%; float: left; clear: both;}
+
+.quemsomos .lado2{width: 70%; float: left; padding-left: 80px;}
+
+.quemsomos .lado2 .titulo{width: 100%; float: left; clear: both; font-size: 45px; font-weight: 900; color: #346397;}
+
+.quemsomos .lado2 .texto{width: 100%; float: left; clear: both; font-size: 20px; font-weight: 400; color: #646870; margin-top: 20px;}
+
+
+.imgQuemSomos {width: 225px}
+
+
+.menufooter  {font-size: 4px; font-weight: 400; color: #646870; }
+
+
+
+.numeros .cada .titulo{width: 100%; float: left; clear: both; font-size: 45px; font-weight: 900; color: #346397;}
+
+
+.numeros{width: 100%; float: left; clear: both; background: #f1efef; padding: 50px 0px;}
+
+.numeros .cada{width: 25%; float: left; text-align: center; padding: 0px 20px;}
+
+.numeros .cada h2{width: 100%; float: left; clear: both; text-align: center; font-size: 60px; font-weight: 900; color: #396799;}
+
+.numeros .cada span{width: 100%; float: left; clear: both; text-align: center; font-size: 19px; color: #646870; margin-top: 20px;}
+
+
+
+
+
+
+.solucoes{width: 100%; float: left; clear: both; padding: 40px 0px 0px; margin: 0px 0px 0px 0px}
+
+.solucoes h1{width: 100%; float: left; clear: both; font-size: 60px; font-weight: 900; color: #396799; text-align: center;}
+
+.solucoes .todas{width: 100%; float: left; clear: both; margin-top: 20px;}
+
+.solucoes .todas .cada{width: 32%; height: 500px; margin: 0.5% 0.5%  0.5%; border: 1px solid #CCC; border-radius: 10px; overflow: hidden; float: left;}
+
+.solucoes .todas .cada .imagem{width: 100%; height: 250px; float: left; clear: both;}
+
+.solucoes .todas .cada .titulo{width: 100%; float: left; clear: both; padding: 20px; text-align: center; font-size: 19px; color: #646870;}
+
+.solucoes .todas .cada .btn{float: left; clear: both; width: 80%; margin-left: 10%; background: #396799; color: #FFF; font-size: 19px; padding: 15px; border-radius: 8px; text-align: center; margin-bottom: 20px;}
+
+.solucoes .todas .cada .btn:hover{opacity: 0.7;}
+
+
+
+.solucoes .tituloS{width: 100%; float: left; clear: both; font-size: 45px; font-weight: 900; color: #346397;}
+
+
+.orcamento{width: 100%; float: left; clear: both; background: #2f4762; padding: 70px 0px 20px 0px;}
+
+.orcamento h2{width: 100%; float: left; clear: both; text-align: center; font-size: 46px; color: #FFF; font-weight: 900;}
+
+.orcamento .texto{width: 100%; float: left; clear: both; text-align: center; color: #FFF; font-size: 30px; padding: 20px 0px;}
+
+.orcamento .texto b{font-weight: 900;}
+
+.orcamento .btn{float: left; clear: both; font-size: 30px; font-weight: 900; color: #FFF; background: #5cb6d1; padding: 15px 50px; border-radius: 8px;}
+
+.orcamento .btn:hover{opacity: 0.7;}
+
+
+
+
+
+footer{width: 100%; float: left; clear: both; background: #f1efef; padding: 100px 0px 0px 0px;}
+
+footer ul{float: left;}
+
+footer ul li{float: left; clear: both; margin: 3px 0px;  color: #646870;} 
+
+footer ul li a{float: left; clear: both; font-size: 21px; color: #646870;}
+
+footer ul li a:hover{text-decoration: underline;}
+
+
+
+footer .textos{float: right; font-size: 21px; color: #646870; line-height: 50px; padding-top: 20px;}
+
+footer .textos i{color: #4980ad; width: 40px; text-align: center;}
+
+
+
+footer .copy{width: 100%; float: left; clear: both; margin-top: 40px;}
+
+footer .copy img{float: left; clear: both;}
+
+footer .copy img:hover{opacity: 0.7;}
+
+footer .copy span{width: 100%; float: left; clear: both; text-align: center; font-size: 30px; color: #646870; padding-top: 20px;}
+
+
+
+
+
+.mvv{width: 100%; float: left; clear: both; margin-bottom: 50px;}
+
+.mvv .cada{width: 30%; float: left; border: 1px solid #CCC; border-radius: 10px; padding: 50px 20px; margin-right: 51px;}
+
+.mvv .cada img{float: left; clear: both;}
+
+.mvv .cada h3{width: 100%; float: left; clear: both; text-align: center; font-size: 45px; color: #346397; padding: 20px 0px; margin-top: 20px;}
+
+.mvv .cada span{width: 100%; float: left; clear: both; text-align: center; font-size: 20px; color: #646870; line-height: 30px;}
+
+
+
+.mvv .cada:last-child{margin-right: 0px;}
+
+
+
+
+
+.seguranca{width: 100%; float: left; clear: both; padding: 100px 0px;}
+
+.seguranca .titulo{width: 100%; float: left; clear: both; font-size: 45px; font-weight: 900; color: #346397; text-align: center;}
+
+.seguranca .texto{width: 100%; float: left; clear: both; font-size: 20px; color: #646870; line-height: 38px; margin-top: 20px; text-align: center; margin-bottom: 50px;}
+
+.seguranca .todos{width: 100%; float: left; clear: both;}
+
+.seguranca .todos .cada{width: 25%; height: 200px; float: left; position: relative;}
+
+.seguranca .todos .cada img{float: left; clear: both; max-width: 90%; max-height: 90%;}
+
+
+
+
+
+.menu_servicos{width: 100%; float: left; clear: both; margin-bottom: -50px;}
+
+.menu_servicos ul{width: 100%; float: left; clear: both; padding: 20px 40px; margin-top: 50px;}
+
+.menu_servicos ul li{width: 25%; float: left;}
+
+.menu_servicos ul li a{float: left; font-size: 20px; color: #626870; padding: 10px 10px; text-align: center;}
+
+.menu_servicos ul li a:hover{opacity: 0.7;}
+
+
+
+.menu_servicos ul li.ativo a{border-bottom: 5px solid #4980ad;}
+
+.whatsapp {
+	position: fixed;
+	bottom:10px;
+	left:10px;
+	z-index: 999;
+}
+
+
+.servicos{width: 100%; float: left; clear: both; margin-bottom: -100px;}
+
+.servicos .cada{width: 100%; float: left; clear: both; margin: 30px 0px; border: 1px solid #d1d1d1; border-radius: 8px; overflow: hidden;}
+
+.servicos .cada .imagem{width: 30%; height: 350px; float: left;}
+
+.servicos .cada .textos{width: 70%; float: left; height: 350px; padding: 40px;}
+
+.servicos .cada .textos .titulo{width: 100%; float: left; clear: both; font-size: 30px; font-weight: 900; color: #346397;}
+
+.servicos .cada .textos .texto{width: 100%; float: left; clear: both; font-size: 20px; color: #626870; padding: 20px 0px 10px 0px; line-height: 28px;}
+
+.servicos .cada .textos a{font-size: 20px; color: #346397; font-weight: 900; float: left; clear: both;}
+
+.servicos .cada .textos .btn{background: #5cb6d1; color: #FFF; font-size: 19px; padding: 10px 30px; border-radius: 8px; margin-top: 20px;}
+
+.servicos .cada .textos a:hover{opacity: 0.7;}
+
+
+
+.servicos .voltar{float: left; background: #5cb6d1; color: #FFF; font-size: 26px; padding: 10px 30px; border-radius: 8px; margin-top: 20px;}
+
+.servicos .voltar:hover{opacity: 0.7; cursor: pointer;}
+
+
+
+.servicos .semresultado{width: 100%; float: left; clear: both; font-size: 32px; color: #999; padding: 40px 0px; text-align: center;}
+
+
+
+
+
+.clientes{width: 100%; float: left; clear: both; padding: 50px 0px;}
+
+.clientes h1{width: 100%; float: left; clear: both; font-size: 50px; font-weight: 900; color: #346397; padding: 20px 0px; text-align: center;}
+
+.clientes .todos{width: 100%; float: left; clear: both;}
+
+.clientes .todos .cada{width: 33.3333333333%; float: left; height: 200px; position: relative;}
+
+.clientes .todos .cada img{max-width: 70%; max-height: 70%; float: left;}
+
+.clientes .todos .cada:hover{transform: scale(1.1);}
+
+.clientes .todos a:hover{opacity: 0.7;}
+
+
+
+
+
+.contato{width: 100%; float: left; clear: both; padding: 50px 0px;}
+
+.contato h1{width: 100%; float: left; clear: both; font-size: 50px; font-weight: 900; color: #346397; padding: 20px 0px; text-align: center;}
+
+.contato h4{width: 100%; float: left; clear: both; font-size: 26px; color: #626870; padding: 20px 0px; text-align: center;}
+
+
+
+.contato form{width: 100%; float: left; clear: both; background: #f1efef; padding: 40px; border-radius: 8px; margin-top: 40px; margin-bottom: -240px;}
+
+.contato form input,
+
+.contato form textarea{width: 100%; font-family: 'Montserrat'; float: left; clear: both; font-size: 26px; color: #626870; padding: 20px; border:4px solid transparent; background: #FFF; border-radius: 8px; outline: none; margin: 10px 0px;}
+
+.contato form textarea{height: 300px;}
+
+
+
+.contato form input:focus,
+
+.contato form textarea:focus{border:4px solid #346397;}
+
+
+
+.contato form button{width: 100%; float: left; clear: both; background: #346397; color: #FFF; font-size: 30px; font-weight: 900; text-align: center; padding: 20px; border-radius: 8px; margin-top: 20px; border: none; outline: none;}
+
+.contato form button:hover{cursor: pointer; opacity: 0.7;}
+
+
+
+
+
+
+
+
+
+
+
+.overlay_hamb{background:#000; opacity:0.8; width: 100%; height: 100%; position: fixed; top:0px; bottom:0px; left:0px; right:0px; float:left; z-index:99; display:none;}
+
+.hamburguer{width: 40px; float:left; position: absolute; z-index:999; right:20px; top:32px; display:none;}
+
+.line{width: 100%; height:4px; background:#346397; float:left; margin:3px 0px;}
+
+.hamburguerAtivo .line:nth-child(2){display:none;}
+
+.hamburguerAtivo .line:first-child{-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg); margin-top:7px;}
+
+.hamburguerAtivo .line:last-child{-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg); margin-top:-7px;}
+
+.menu-responsive{height: 100%; background:#346397; float: left; position: fixed; top:0px; bottom:0px; left:0px; right:100%; z-index:9999; overflow: hidden;}
+
+.menu-responsive ul{color:#FFF; font-size: 16px; float:left; width: 100%; padding: 20px 0px;}
+
+.menu-responsive ul li a{float:left; width: 100%; padding:20px 30px; -webkit-transition:all 0.3s ease; -moz-transition:all 0.3s ease; -ms-transition:all 0.3s ease; -o-transition:all 0.3s ease; transition:all 0.3s ease;}
+
+.menu-responsive ul li a:hover{padding-left:35px; -webkit-transition:all 0.3s ease; -moz-transition:all 0.3s ease; -ms-transition:all 0.3s ease; -o-transition:all 0.3s ease; transition:all 0.3s ease;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Tablet/Notebook **/
+
+@media only screen and (max-width: 1024px) {
+
+	.show-tablet{display:block!important}.hide-tablet{display:none!important}
+
+
+
+	html, body{width: 100%; float: left; clear: both; overflow-x: hidden;}
+
+
+
+	.hamburguer{display: block;}
+
+
+
+
+
+	header .topo img.logo{width: 200px; position: relative; margin-left: 20px;}
+
+	header .topo .boxs{float: left; clear: both; display: none;}
+
+	header .topo .boxs .cada{width: 100%; text-align: center; margin: 5px 0px;}
+
+	header .topo .boxs .cada i{float: initial;}
+
+	header .topo .boxs .cada span{float: initial;}
+
+
+
+	header .menu{display: none;}
+
+	header .menu ul li{width: 100%;}
+
+	header .menu ul li a{padding: 10px 20px; width: 100%; text-align: center;}
+
+	header .menu ul li.ativo a{border-bottom: none; color: #346397; font-weight: 900;}
+
+
+
+	.quemsomos{padding: 0px 20px 50px 20px;}
+
+	.quemsomos .lado1{width: 100%; display: none;}
+
+	.quemsomos .lado1 img{max-width: 200px; position: relative; left: 50%; margin-left: -100px;}
+
+	.quemsomos .lado2{width: 100%; padding-left: 0px; padding: 40px 20px; margin-bottom: -130px;}
+
+
+
+	.mvv{width: 100%; padding: 20px;}
+
+	.mvv .cada{width: 100%; margin: 20px 0px;}
+
+	.mvv .cada:last-child{margin-bottom: -310px;}
+
+	.mvv .cada h3{font-size: 45px;}
+
+
+
+	.numeros .cada{width: 100%; padding: 40px 0px;}
+
+	.numeros .cada:last-child{margin-bottom: -180px;}
+
+
+
+	.seguranca{padding: 40px 20px;}
+
+	.seguranca .todos .cada{width: 50%;}
+
+
+
+	.orcamento{padding: 40px 20px;}
+
+	.orcamento .btn{font-size: 22px;}
+
+
+
+	footer ul{width: 100%;}
+
+	footer ul li{width: 100%; text-align: center;}
+
+	footer ul li a{width: 100%; text-align: center;}
+
+
+
+	footer .textos{width: 100%; float: left; text-align: center;}
+
+
+
+	footer .copy{padding: 0px 20px;}
+
+	footer .copy img{max-width: 250px;}
+
+	footer .copy span{font-size: 16px;}
+
+
+
+
+
+	.solucoes{padding: 40px 20px; font-size: 40px; margin-bottom: -290px;}
+
+	.solucoes .todas .cada{width: 100%;}
+
+	.solucoes .todas .cada .btn{font-size: 22px; padding: 10px 20px; width: auto; position: relative; left: 50%; margin-left:-80px; }
+
+
+
+	.servicos{padding: 20px;}
+
+	.servicos .cada .imagem{width: 100%; height: 200px;}
+
+	.servicos .cada .textos{width: 100%; height: auto;}
+
+	.servicos .cada .textos .btn{font-size: 22px;}
+
+
+
+	.menu_servicos ul li{width: 100%;}
+
+	.menu_servicos ul li a{width: 100%; text-align: center; padding: 40px 30px;}
+
+
+
+	.clientes{padding: 40px 20px;}
+
+	.clientes .todos .cada{width: 50%;}
+
+
+
+	.contato{padding: 40px 20px;}
+
+
+
+
+
+	.contato form input,
+
+	.contato form textarea{font-size: 20px; padding: 10px;}
+
+	.contato form button{font-size: 20px; background: #5cb6d1;}
+
+
+
+	.solucoes .todas .cada{height: auto;}
+
+
+
+}
+
+/** Celular Maior **/
+
+@media only screen and (max-width: 768px) {
+
+	.show-phone{display:block!important}.hide-phone{display:none!important}
+
+}
+
+@media only screen and (max-width: 470px) {
+
+	.show-phone{display:block!important}.hide-phone{display:none!important}
+
+}
+
+@media only screen and (max-width: 350px) {
+
+	.show-phone{display:block!important}.hide-phone{display:none!important}
+
+}
+
+
+
